@@ -1,2 +1,44 @@
-# IntPrint.jl
-Convert Julia integers to strings with separators every three digits
+# IntPrint
+
+The module `IntPrint` defines the function `intprint` used to convert
+integers into strings with commas separating triples of digits.
+
+## Usage
+
+```julia
+julia> using IntPrint
+
+julia> intprint(12345678)
+"12,345,678"
+
+julia> intprint(-4391024)
+"-4,391,024"
+```
+
+## Optional arguments
+
+#### Four-digit numbers
+
+Users might prefer four-digit numbers to print without a separator.
+The optional argument `except4` can be set to `true` to suppress the
+comma in this case.
+```julia
+julia> intprint(1234)
+"1,234"
+
+julia> intprint(1234,except4=true)
+"1234"
+```
+
+#### Alternate separator
+
+The default separator is a comma, but this can be changed
+to another character (or characters) with the optional `sep`
+argument:
+```julia
+julia> intprint(-1234567)
+"-1,234,567"
+
+julia> intprint(-1234567,sep="_")
+"-1_234_567"
+```
