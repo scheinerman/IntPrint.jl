@@ -17,7 +17,7 @@ Two named optional arguments may be passed:
   `intprint(1234,except4=true)` yields `"1234"`.
 """
 
-function intprint(n::Integer;sep=",",except4=false)::String
+function intprint(n::Integer;sep::String=",",except4::Bool=false)::String
   # hand 0 as a special case (do we need to?)
   # if n==0
   #   return "0"

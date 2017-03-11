@@ -42,3 +42,10 @@ julia> intprint(-1234567)
 julia> intprint(-1234567,sep="_")
 "-1_234_567"
 ```
+
+## Not Todo List
+
+If I started over again, I suppose I could make the
+base selectable to something other than 10
+and the grouping set to something other than triplets,
+but why?
