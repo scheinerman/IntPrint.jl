@@ -6,9 +6,7 @@
 [![codecov.io](http://codecov.io/github/scheinerman/IntPrint.jl/coverage.svg?branch=master)](http://codecov.io/github/scheinerman/IntPrint.jl?branch=master)
 
 The module `IntPrint` defines the function `intprint` used to convert
-integers into strings with commas separating triples of digits and the
-`flush_print` function to print right (or left) justified values in a
-string of given length.
+integers into strings with commas separating triples of digits.
 
 ## Using `intprint`
 
@@ -48,24 +46,6 @@ julia> intprint(-1234567)
 
 julia> intprint(-1234567,sep="_")
 "-1_234_567"
-```
-
-## Using `flush_print`
-
-```
-julia> flush_print("hello", 10)
-"     hello"
-
-julia> flush_print("hello", 10, false)
-"hello     "
-
-julia> flush_print(sqrt(10),30)
-"            3.1622776601683795"
-
-julia> flush_print(sqrt(10),8)
-┌ Warning: Trunctated to fit width
-└ @ IntPrint ~/.julia/dev/IntPrint/src/IntPrint.jl:68
-"3.162277"
 ```
 
 ## Not Todo List
