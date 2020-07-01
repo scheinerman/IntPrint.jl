@@ -1,6 +1,6 @@
 name = "IntPrint"
 uuid = "2628d172-f450-5cfd-afb0-e6f7f2a0b72b"
-version = "0.2.0"
+version = "0.1.0"
 
 [compat]
 julia = "1"
