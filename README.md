@@ -1,7 +1,7 @@
 # IntPrint
 
 
-[![Build Status](https://travis-ci.org/scheinerman/IntPrint.jl.svg?branch=master)](https://travis-ci.org/scheinerman/IntPrint.jl)
+[![Build Status](https://travis-ci.com/scheinerman/IntPrint.jl.svg?branch=master)](https://travis-ci.com/scheinerman/IntPrint.jl)
 
 [![codecov.io](http://codecov.io/github/scheinerman/IntPrint.jl/coverage.svg?branch=master)](http://codecov.io/github/scheinerman/IntPrint.jl?branch=master)
 
